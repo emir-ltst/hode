@@ -368,7 +368,7 @@ function App() {
         <header className="topbar">
           <div className="breadcrumb">{t('mySpace')} <span>/</span> {view === 'dashboard' ? t('todayUpper') : t(view === 'shortcuts' ? 'keyboardShortcuts' : view)}</div>
           <div className="top-actions">
-            <button className="icon-button date-top" aria-label={t('chooseDate')} onClick={() => showView('calendar')}>▦ <span>{dateLabel(selectedDate, { month: 'short', day: 'numeric' }, locale)}</span></button>
+            <button className="icon-button date-top" aria-label={t('chooseDate')} onClick={() => showView('calendar')}>▦</button>
             <button className="icon-button" aria-label={t('searchJournal')} onClick={() => { setSearchOpen(true); setTimeout(() => document.querySelector('.search-overlay input')?.focus(), 30) }}>⌕</button>
             <label className="language-quick" title={t('language')}><span>🌐</span><select aria-label={t('language')} value={locale} onChange={(event) => updateData((current) => ({ ...current, language: event.target.value }))}><option value="en">EN</option><option value="ru">RU</option><option value="ky">KY</option></select></label>
             {/* <button className="icon-button theme-toggle" aria-label={t('toggleTheme')} onClick={() => updateData((current) => ({ ...current, theme: current.theme === 'light' ? 'dark' : 'light' }))}>{data.theme === 'light' ? '☾' : '☀'}</button> */}

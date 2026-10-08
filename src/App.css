@@ -34,7 +34,6 @@
 .theme-toggle { font-size: 16px; }
 .keyboard-toggle { height: 34px; padding: 0 12px; display: flex; align-items: center; gap: 7px; border: 1px solid var(--line); border-radius: 10px; color: var(--muted); background: var(--surface); font-size: 10px; font-weight: 600; cursor: pointer; transition: .2s; }
 .language-quick { height: 34px; display: flex; align-items: center; gap: 4px; padding: 0 7px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--muted); font-size: 12px; }
-.language-quick select { max-width: 42px; border: 0; outline: 0; background: transparent; color: var(--text); font-size: 9px; font-weight: 700; cursor: pointer; }
 .language-quick select option { color: #343442; background: white; }
 .language-selector { max-width: 360px; display: flex; align-items: center; gap: 9px; margin-top: 15px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 9px; background: var(--bg); color: var(--muted); }
 .language-selector > span { font-size: 17px; }
